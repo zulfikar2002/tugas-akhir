@@ -1,8 +1,6 @@
 import Navbar from "./navbar";
-import Passwordcheckout from "./passwordcheckout";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import Footer from "./footer";
 import { useNavigate } from "react-router-dom";
 
@@ -19,11 +17,8 @@ function ProductList({ products, onChangeProductQuantity, onRemoveProduct }) {
     <section className="container w-11/12 my-0 mx-auto overflow-auto">
       <ul className="products border-b flex flex-col  border-solid border-cyan-200 p-0 m-0 list-none">
         {products.map((product, index) => {
-          // const a = product.id_item
-          // console.log(info[0])
           const a = parseInt(product.jumlah);
           const b = formatCurrency(parseInt(product.harga));
-          // const c =
 
           return (
             <li
@@ -31,25 +26,22 @@ function ProductList({ products, onChangeProductQuantity, onRemoveProduct }) {
               key={index}
             >
               <div className="col left w-3/4 justify-between flex flex-row float-left">
-                <div className="thumbnail">
-                  <a
-                    className="no-underline text-red-300 hover:text-green-300"
-                    href="#"
-                  >
+                <div>
+                  
                     <img
-                      className=" w-1/5 align-middle rounded"
+                      className=" w-[150px] h-[150px]  rounded"
                       src={product.url}
                       alt="pic"
                     />
-                  </a>
+                  
                 </div>
-                <div className="detail ml-[-1000px] py-0 px-2 leading-8">
+                <div className="detail ml-[-400px] py-0 px-2 leading-8">
                   <div className="name text-xl">
                     <a
                       href="#"
                       className="no-underline text-red-300 hover:text-green-300"
                     >
-                      {product.nama}{index}
+                      {product.nama}
                     </a>
                   </div>
                   <div className="price text-2xl">{b}</div>
@@ -112,7 +104,7 @@ function Summary({
             onChange={onEnterPromoCode}
           />
           <button
-            className="bg-red-500 border-2 float-left w-1/5 px-0 py-2 rounded-sm hover:border-orange-700 hover:bg-orange700 after:content-['\276f'] after:text-sm text-blue-500 cursor-pointer hover:bg-green-500 "
+            className="bg-gradient-to-r  from-rose-700 via-rose-600 to-pink-600 border-2 float-left w-1/5 px-0 py-2 rounded-sm hover:border-orange-700 after:content-['\276f'] after:text-sm text-white cursor-pointer hover:text-blue-700"
             type="button"
             onClick={checkPromoCode}
           />
@@ -166,7 +158,7 @@ function Summary({
             </div>
           </div>
           <button
-            className="bg-red-500 float-right border-2 text-lg py-3 px-11 rounded-3xl text-blue-500 cursor-pointer hover:bg-green-500 "
+            className="bg-gradient-to-r  from-rose-700 via-rose-600 to-pink-600  text-white float-right border-2 text-lg py-3 px-11 rounded-3xl cursor-pointer hover:text-blue-700"
             type="submit"
           >
             Check Out
@@ -326,19 +318,18 @@ export default function Page() {
       ) : (
         <div className="empty-product text-center">
           <h3>Buy Some Product?</h3>
-          <button
+          <a
             className="bg-red-500 border-2 text-xl px-7 py-2 rounded text-blue-500 cursor-pointer hover:bg-green-500 "
-            // onClick={window.location.href = "/collection"}
+            href="/collection"
           >
             Collection
-          </button>
+          </a>
         </div>
       )}
     </div>
   );
 }
 
-// ReactDOM.render(<Passwordcheckout />, document.getElementById("root"));
 
 function formatCurrency(value) {
   return Number(value).toLocaleString("id-ID", {

@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
     <>
-      <footer className=" bottom-0 left-0 z-20 p-4 w-full bg-white dark:bg-gray-900">
+      <footer className=" bottom-0 left-0 z-20 p-4 w-full bg-gradient-to-r  from-rose-700 via-rose-600 to-pink-600 ">
         <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-gray-400">
               Company
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400">
+            <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a href="#" className=" hover:underline">
                   About
@@ -31,10 +31,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-gray-400">
               Help center
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400">
+            <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
                   Discord Server
@@ -58,10 +58,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-gray-400">
               Legal
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400">
+            <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
                   Privacy Policy
@@ -80,10 +80,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-gray-400">
               Download
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400">
+            <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
                   iOS
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="py-6 px-4 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+          <span className="text-sm text-black dark:text-gray-300 sm:text-center">
             © 2022 <a href="https://flowbite.com/">Semoga Jadi™</a>. All Rights
             Reserved.
           </span>

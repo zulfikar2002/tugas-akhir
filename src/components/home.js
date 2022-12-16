@@ -1,4 +1,3 @@
-import pic from "./asset/pic2.png";
 import Navbar from "./navbar";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -34,40 +33,40 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <body class="bg-gradient-to-r  from-rose-700 via-rose-600 to-pink-600 md:min-h-screen  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 ">
-        <div class="container flex flex-wrap items-center justify-between mx-auto ">
-          <div class="w-2/5 z-0 pl-16">
-            <h1 class="mb-4 text-9xl font-extrabold tracking-tight leading-none text-gray-100 md:text-5xl lg:text-6xl dark:text-white">
+      <body className="bg-gradient-to-r  from-rose-700 via-rose-600 to-pink-600 md:min-h-screen  border-gray-200 px-2 sm:px-4 py-2.5 ">
+        <div className="container flex flex-wrap items-center justify-between mx-auto ">
+          <div className="w-2/5 z-0 pl-16">
+            <h1 className="mb-4 text-9xl font-extrabold tracking-tight leading-none text-gray-100 md:text-5xl lg:text-6xl ">
               {data.nama}
             </h1>
-            <p class="mb-3 font-light indent-10 text-gray-100 dark:text-gray-400">
+            <p className="mb-3 font-light indent-10 text-gray-100">
               {data.deskripsi}
             </p>
-            <h3 class="mb-4 text-5xl font-extrabold tracking-tight leading-none text-gray-100 md:text-5xl lg:text-3xl dark:text-white">
+            <h3 className="mb-4 text-5xl font-extrabold tracking-tight leading-none text-gray-100 md:text-5xl lg:text-3xl ">
               {formatCurrency(data.harga)}
             </h3>
             <button
               type="button"
               onClick={move}
-              class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 "
             >
               Buy Now
             </button>
           </div>
-          <div class="mr-16 ">
-            <div class="p-2 bg-white rounded-full">
+          <div className="mr-16 ">
+            <div className="p-2 bg-white rounded-full">
               <img
-                class=" ml-auto max-w-lg h-auto z-10 rounded-full  "
+                className=" ml-auto max-w-lg h-auto z-10 rounded-full  "
                 src={data.url}
                 alt="dress"
               ></img>
             </div>
           </div>
-          <div class="float-right">
-            <div class="my-8">
+          <div className="float-right">
+            <div className="my-8">
               <button
                 type="button"
-                class=" text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+                className=" text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +83,7 @@ export default function Home() {
               </button>
               <button
                 type="button"
-                class="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+                className="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +100,7 @@ export default function Home() {
               </button>
               <button
                 type="button"
-                class="text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
+                className="text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +114,7 @@ export default function Home() {
                   />
                 </svg>
               </button>
-              <p class="float-right text-white">
+              <p className="float-right text-white">
                 ____________________________________________________________
               </p>
             </div>
