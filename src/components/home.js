@@ -9,7 +9,7 @@ export default function Home() {
 
   const random = Math.floor(Math.random() * 25) + 1;
   const number = localStorage.getItem("id_item");
-  var url = `${process.env.REACT_APP_BACKEND_URL}product/` + number;
+  var url = `${process.env.REACT_APP_BACKEND_URL}/product/` + number;
 
   const move = async (event) => {
     event.preventDefault();

@@ -231,6 +231,7 @@ export default function Page() {
 
   const onRemoveProduct = (i) => {
     const filteredProduct = products.filter((product, index) => {
+      console.log(product)
       return index != i;
     });
     console.log(filteredProduct[0].id_item);
