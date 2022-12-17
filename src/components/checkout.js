@@ -270,7 +270,8 @@ export default function Page() {
 
   const handleCheckout =(products, event)=>{
     const data = new FormData(event.currentTarget);
-    console.log(products)
+   
+    alert("checkout berhasil");
     axios
       .post(`https://backend-web-production.up.railway.app/productlog`, {
         token: localStorage.getItem("token"),
@@ -282,7 +283,7 @@ export default function Page() {
       })
       .then(function (response) {
         console.log(response);
-        alert("checkout berhasil");
+        
       })
 
       .catch(function (error) {
