@@ -282,6 +282,7 @@ export default function Page() {
       })
       .then(function (response) {
         console.log(response);
+        alert("checkout berhasil");
       })
 
       .catch(function (error) {
