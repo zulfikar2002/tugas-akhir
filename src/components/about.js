@@ -42,7 +42,7 @@ export default function About() {
       name: "Zulfikar",
       position: "Database Engineer",
       description:
-        "ERD, Flowchart, 3NF",
+        "ERD, Flowchart, 3NF, jul commit",
         github: "https://github.com/zulfikar2002",
       linkedin : "https://www.linkedin.com/in/zulfikar-zahir/",
       instagram: "https://www.instagram.com/zulfikar_zahir/",
